@@ -3,4 +3,3 @@
  */
 var clientURL = "http://localhost:63342/mikuni";
 //var server = "http://www.iidooo.com";
-var activeNavItem = "index";

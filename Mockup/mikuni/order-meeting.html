@@ -4,21 +4,36 @@
     <meta charset="UTF-8">
     <title>MIKUNI-会议室预约</title>
     <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="libs/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+    <link href="css/order-meeting.css" rel="stylesheet">
 </head>
 <body>
 <div id="orderMeeting">
     <header></header>
 
-    <div id="main"></div>
+    <div id="main">
+            <div>
+                <div class="input-group date form_date" data-date=""
+                     data-date-format="yyyy-mm-dd" data-link-field="calendar"
+                     data-link-format="yyyy-mm-dd">
+                </div>
+            </div>
+            <div>
 
-    <footer></footer>
+            </div>
+        </div>
+</div>
+
+<footer></footer>
 </div>
 
 <script src="libs/jquery/js/jquery-2.1.4.min.js"></script>
 <script src="libs/jquery.cookie/jquery.cookie.js"></script>
 <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
 <script src="js/common.js"></script>
 <script src="js/widgets/header.js"></script>
 <script src="js/widgets/footer.js"></script>
+<script src="js/order-meeting.js"></script>
 </body>
 </html>
