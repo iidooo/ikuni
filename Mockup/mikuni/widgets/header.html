@@ -1,0 +1,56 @@
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">MIKUNI</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="orderMeeting">
+                    <a href="order-meeting.html">会议室预约</a>
+                </li>
+                <li class="orderVehicle">
+                    <a href="order-vehicle.html">车辆预约</a>
+                </li>
+                <li class="applyTrip">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">出差申请/审批<span class="caret"></span>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="apply-trip.html">出差申请</a></li>
+                            <li><a href="apply-hotel.html">酒店申请</a></li>
+                            <li><a href="apply-traffic.html">交通申请</a></li>
+                            <li><a href="apply-approval.html">审批</a></li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="applyAsset">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">批准申请/审批<span class="caret"></span>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="apply-asset.html">申请</a></li>
+                            <li><a href="apply-asset-approval.html">审批</a></li>
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">报表输出<span class="caret"></span>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">会议室预约</a></li>
+                            <li><a href="#">车辆预约</a></li>
+                            <li><a href="#">出差申请</a></li>
+                            <li><a href="#">批准申请</a></li>
+                        </ul>
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="./">您好，管理员</a></li>
+                <li><a href="#" onclick="logout()">注销</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<script>
+    var $divPage = $("div:first");
+    var pageID = $divPage.attr("id");
+    var $activeLi = $('.' + pageID);
+    $activeLi.addClass('active');
+</script>
