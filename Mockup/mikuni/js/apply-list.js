@@ -12,4 +12,9 @@ $(function () {
         forceParse: 0,
         format: 'yyyy-mm-dd'
     });
+
+    $("#tbodyApplyList tr").click(function(){
+        console.log(1);
+        location.href = "apply-trip-detail.html";
+    });
 });

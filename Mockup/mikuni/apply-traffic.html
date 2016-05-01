@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>MIKUNI-交通申请</title>
     <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="libs/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
     <link href="css/widgets/header.css" rel="stylesheet">
 </head>
 <body>
@@ -175,15 +176,25 @@
                                   class="form-control"></textarea>
                         </div>
                     </div>
+                    <div class="panel panel-warning">
+                        <div class="panel-heading">指定审批人</div>
+                        <div class="panel-body">
+                            <div class="form-inline">
+                                <select class="form-control">
+                                    <option>部长</option>
+                                    <option>人事</option>
+                                    <option>财务</option>
+                                </select>
+                                <button id="btnSetApprovalUser" class="btn btn-default">指定下一审批人</button>
+                            </div>
+                        </div>
+                    </div>
                     <div class="text-center">
                         <div class="btn-group">
-                            <button class="btn btn-primary" type="submit">申请</button>
+                            <a class="btn btn-primary" href="apply-list.html">申请</a>
                         </div>
                         <div class="btn-group">
                             <button class="btn btn-info" type="button">临时保存</button>
-                        </div>
-                        <div class="btn-group">
-                            <button class="btn btn-danger" type="button">删除</button>
                         </div>
                     </div>
                 </div>
@@ -197,8 +208,10 @@
 <script src="libs/jquery/js/jquery-2.1.4.min.js"></script>
 <script src="libs/jquery.cookie/jquery.cookie.js"></script>
 <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
 <script src="js/common.js"></script>
 <script src="js/widgets/header.js"></script>
 <script src="js/widgets/footer.js"></script>
+<script src="js/apply-traffic.js"></script>
 </body>
 </html>
