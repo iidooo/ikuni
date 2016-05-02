@@ -1,5 +1,5 @@
 /**
- * Created by Ethan on 16/4/30.
+ * Created by Ethan on 16/5/2.
  */
 $(function () {
     $('.form_date').datetimepicker({
@@ -25,5 +25,5 @@ $(function () {
         format: 'hh:ii'
     });
 
-    $("#schedule").load(clientURL + "/widgets/scheduler-daily.html");
+    $("#schedule").load(clientURL + "/widgets/scheduler-vehicle.html");
 });

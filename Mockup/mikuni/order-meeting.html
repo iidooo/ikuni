@@ -6,23 +6,57 @@
     <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="libs/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
     <link href="css/widgets/header.css" rel="stylesheet">
+    <link href="css/widgets/scheduler-daily.css" rel="stylesheet">
     <link href="css/order-meeting.css" rel="stylesheet">
 </head>
 <body>
 <div id="orderMeeting">
     <header></header>
 
-    <div id="main">
-            <div>
+    <div id="main" class="container-fluid">
+        <div class="row">
+            <div class="col-md-2">
                 <div class="input-group date form_date" data-date=""
                      data-date-format="yyyy-mm-dd" data-link-field="calendar"
                      data-link-format="yyyy-mm-dd">
                 </div>
             </div>
-            <div>
+            <div id="" class="col-md-10">
+                <div class="col-md-1">
+                    <table  width="100px">
+                        <tr>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th><a href="order-meeting-detail.html">第1会议室</a></th>
+                        </tr>
+                        <tr>
+                            <th><a href="order-meeting-detail.html">第2会议室</a></th>
+                        </tr>
+                        <tr>
+                            <th><a href="order-meeting-detail.html">第3会议室</a></th>
+                        </tr>
+                        <tr>
+                            <th><a href="order-meeting-detail.html">第4会议室</a></th>
+                        </tr>
+                        <tr>
+                            <th><a href="order-meeting-detail.html">第5会议室</a></th>
+                        </tr>
+                        <tr>
+                            <th><a href="order-meeting-detail.html">第6会议室</a></th>
+                        </tr>
+                        <tr>
+                            <th><a href="order-meeting-detail.html">第7会议室</a></th>
+                        </tr>
 
+                    </table>
+                </div>
+                <div class="col-md-11" id="schedule" style="overflow-x:auto">
+
+                </div>
             </div>
         </div>
+    </div>
 </div>
 
 <footer></footer>
@@ -35,6 +69,8 @@
 <script src="js/common.js"></script>
 <script src="js/widgets/header.js"></script>
 <script src="js/widgets/footer.js"></script>
+<script src="js/widgets/dialog-create-scheduler.js"></script>
+<script src="js/widgets/scheduler-daily.js"></script>
 <script src="js/order-meeting.js"></script>
 </body>
 </html>
