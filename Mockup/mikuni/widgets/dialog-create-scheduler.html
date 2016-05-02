@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MIKUNI-创建预定</title>
+    <link href="../libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../libs/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+</head>
+<body>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#dialogCreateScheduler">
+    弹出预约创建对话框
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="dialogCreateScheduler" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="dialogCreateSchedulerLabel">会议室预约创建</h4>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row form-horizontal">
+                        <div class="form-group">
+                            <label class="control-label col-md-2">预约日期</label>
+
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" readonly value="2016-03-30">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row form-horizontal">
+                        <div class="form-group">
+                            <label class="control-label col-md-2">预约场所</label>
+
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" readonly value="301会议室">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row form-horizontal">
+                        <div class="form-group">
+                            <label for="startTime" class="control-label col-md-2">预约时间</label>
+
+                            <div class="col-md-4">
+                                <div class="input-group date form_time" data-date="" data-date-format="hh:ii"
+                                     data-link-field="startTime" data-link-format="hh:ii">
+                                    <input id="startTime" class="form-control" type="text" value="" readonly>
+                                    <span class="input-group-addon"><span
+                                            class="glyphicon glyphicon-time"></span></span>
+                                </div>
+                            </div>
+
+                            <label class="col-md-1 control-label">～</label>
+
+                            <div class="col-md-4">
+                                <div class="input-group date form_time" data-date="" data-date-format="hh:ii"
+                                     data-link-field="endTime" data-link-format="hh:ii">
+                                    <input id="endTime" class="form-control" type="text" value="" readonly>
+                                    <span class="input-group-addon"><span
+                                            class="glyphicon glyphicon-time"></span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row form-horizontal">
+                        <div class="form-group">
+                            <label class="control-label col-md-2">标题</label>
+
+                            <div class="col-md-10">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row form-horizontal">
+                        <div class="form-group">
+                            <label class="control-label col-md-2">备注</label>
+
+                            <div class="col-md-10">
+                                <textarea cols="50" rows="5" class="form-control"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row form-horizontal">
+                        <div class="form-group">
+                            <label class="control-label col-md-2">参加人数</label>
+
+                            <div class="col-md-4">
+                                <input type="text" class="form-control">
+                            </div>
+
+                            <label class="control-label col-md-2">公开性</label>
+
+                            <div class="col-md-4">
+                                <select class="form-control">
+                                    <option>公开</option>
+                                    <option>相关者可见</option>
+                                    <option>私有</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row form-horizontal">
+                        <div class="form-group">
+                            <label class="control-label col-md-2">预约设备</label>
+
+                            <div class="col-md-10">
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 投影仪
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" id="inlineCheckbox2" value="option2"> 视频会议系统
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" id="inlineCheckbox3" value="option3"> 电脑
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row form-horizontal">
+                        <div class="form-group">
+                            <label class="control-label col-md-2">重复设定</label>
+
+                            <div class="col-md-10">
+                                <select id="selRepeatMode" class="form-control">
+                                    <option value="" selected="selected">不重复</option>
+                                    <option value="1">每日</option>
+                                    <option value="2">每周</option>
+                                    <option value="3">每月</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="repeatDailyOption" class="hidden">
+                        <div class="row form-horizontal">
+                            <div class="form-group">
+                                <label for="startTime" class="control-label col-md-2">重复期间</label>
+
+                                <div class="col-md-4">
+                                    <div class="input-group date form_date" data-date="" data-date-format="yyyy-mm-dd"
+                                         data-link-field="startDate" data-link-format="yyyy-mm-dd">
+                                        <input id="startDate" class="form-control" type="text" value="" readonly>
+                                    <span class="input-group-addon"><span
+                                            class="glyphicon glyphicon-time"></span></span>
+                                    </div>
+                                </div>
+
+                                <label class="col-md-1 control-label">～</label>
+
+                                <div class="col-md-4">
+                                    <div class="input-group date form_date" data-date="" data-date-format="yyyy-mm-dd"
+                                         data-link-field="endDate" data-link-format="yyyy-mm-dd">
+                                        <input id="endDate" class="form-control" type="text" value="" readonly>
+                                    <span class="input-group-addon"><span
+                                            class="glyphicon glyphicon-time"></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="repeatWeeklyOption" class="hidden">
+                        <div class="row form-horizontal">
+                            <div class="form-group">
+                                <label class="control-label col-md-2">周选择</label>
+
+                                <div class="col-md-10">
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="option1"> 星期一
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="option2"> 星期二
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="option3"> 星期三
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="option3"> 星期四
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="option3"> 星期五
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="option3"> 星期六
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="option3"> 星期日
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="repeatMonthlyOption" class="hidden">
+                        <div class="row form-horizontal">
+                            <div class="form-group">
+                                <label class="control-label col-md-2">日选择</label>
+
+                                <div class="col-md-10">
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="option1"> 1日
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="option2"> 2日
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="option3"> 3日
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="option3"> 4日
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="option3"> 5日
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="option3"> 6日
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="option3"> 7日
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="option1"> 8日
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="option2"> 9日
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="option3"> 10日
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="option3"> 11日
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="option3"> 12日
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="option3"> 13日
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="option3"> 14日
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="option1"> 15日
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="option2"> 16日
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="option3"> 17日
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="option3"> 18日
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="option3"> 19日
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="option3"> 20日
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="option3"> 21日
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="option1"> 22日
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="option2"> 23日
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="option3"> 24日
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="option3"> 25日
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="option3"> 26日
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="option3"> 27日
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="option3"> 28日
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="option1"> 29日
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="option2"> 30日
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="option3"> 31日
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary">确认</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../libs/jquery/js/jquery-2.1.4.min.js"></script>
+<script src="../libs/jquery.cookie/jquery.cookie.js"></script>
+<script src="../libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="../libs/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/widgets/dialog-create-scheduler.js"></script>
+</body>
+</html>

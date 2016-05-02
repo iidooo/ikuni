@@ -2,14 +2,195 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>MIKUNI-会议室预约</title>
+    <title>MIKUNI-酒店申请</title>
     <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="libs/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+    <link href="css/widgets/header.css" rel="stylesheet">
 </head>
 <body>
 <div id="applyTrip">
     <header></header>
 
-    <div id="main"></div>
+    <div id="main" class="container">
+        <div class="row">
+            <div class="panel panel-primary">
+                <div class="panel-heading">酒店申请</div>
+                <div class="panel-body">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">申请基本信息</div>
+                        <div class="panel-body">
+                            <table class="table">
+                                <tr>
+                                    <th>申请号</th>
+                                    <td>20160503001</td>
+                                    <th>申请日</th>
+                                    <td>2016-05-03</td>
+                                </tr>
+                                <tr>
+                                    <th>申请者</th>
+                                    <td>管理员</td>
+                                    <th>申请部门</th>
+                                    <td>开发部</td>
+                                </tr>
+                                <tr>
+                                    <th>作成者</th>
+                                    <td>管理员</td>
+                                    <th>状态</th>
+                                    <td>新申请</td>
+                                </tr>
+                                <tr>
+                                    <th>申请标题</th>
+                                    <td colspan="3">
+                                        <input type="text" class="form-control"/>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">申请内容</div>
+                        <div class="panel-body">
+                            <table class="table">
+                                <tr>
+                                    <th>部门</th>
+                                    <td colspan="3">
+                                        <select class="form-control">
+                                            <option>开发部</option>
+                                            <option>销售部</option>
+                                            <option>研发部</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>酒店类型</th>
+                                    <td colspan="3">
+                                        <select class="form-control">
+                                            <option>五星级酒店</option>
+                                            <option>四星级酒店</option>
+                                            <option>三星级酒店</option>
+                                            <option>其它旅馆</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>申请理由</th>
+                                    <td colspan="3">
+                                        <textarea cols="100" rows="5"
+                                                  class="form-control"></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>入住时间</th>
+                                    <td colspan="3">
+                                        <div class="form-group">
+                                            <div class="input-group date form_datetime"
+                                                 data-date-format="yyyy-mm-dd hh:ii:ss" data-link-field="tripDateTime"
+                                                 data-link-format="yyyy-mm-dd hh:ii:ss">
+                                                <input id="tripDateTime" class="form-control" type="text" value=""
+                                                       readonly>
+                                                <span class="input-group-addon"><span
+                                                        class="glyphicon glyphicon-remove"></span></span>
+                                                <span class="input-group-addon"><span
+                                                        class="glyphicon glyphicon-th"></span></span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>退订时间</th>
+                                    <td colspan="3">
+                                        <div class="form-group">
+                                            <div class="input-group date form_datetime"
+                                                 data-date-format="yyyy-mm-dd hh:ii:ss" data-link-field="backDateTime"
+                                                 data-link-format="yyyy-mm-dd hh:ii:ss">
+                                                <input id="backDateTime" class="form-control" type="text" value=""
+                                                       readonly>
+                                                <span class="input-group-addon"><span
+                                                        class="glyphicon glyphicon-remove"></span></span>
+                                                <span class="input-group-addon"><span
+                                                        class="glyphicon glyphicon-th"></span></span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>备注</th>
+                                    <td colspan="3">
+                                        <textarea cols="100" rows="5"
+                                                  class="form-control"></textarea>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">附件添加</div>
+                        <div class="panel-body">
+                            <table class="table">
+                                <tr>
+                                    <th width="100px">身份证</th>
+                                    <td><input type="file"></td>
+                                </tr>
+                                <tr>
+                                    <th>护照</th>
+                                    <td><input type="file"></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">审批履历</div>
+                        <div class="panel-body">
+                            <table class="table">
+                                <tr>
+                                    <th>角色</th>
+                                    <th>用户</th>
+                                    <th>处理时间</th>
+                                    <th>处理内容</th>
+                                    <th>备注</th>
+                                </tr>
+                                <tr>
+                                    <td>申请者</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">添加备注</div>
+                        <div class="panel-body">
+                        <textarea cols="100" rows="5"
+                                  class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <div class="panel panel-warning">
+                        <div class="panel-heading">指定审批人</div>
+                        <div class="panel-body">
+                            <div class="form-inline">
+                                <select class="form-control">
+                                    <option>部长</option>
+                                    <option>人事</option>
+                                    <option>财务</option>
+                                </select>
+                                <button id="btnSetApprovalUser" class="btn btn-default">指定下一审批人</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="btn-group">
+                            <a class="btn btn-primary" href="apply-list.html">申请</a>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn btn-info" type="button">临时保存</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer></footer>
 </div>
@@ -17,8 +198,10 @@
 <script src="libs/jquery/js/jquery-2.1.4.min.js"></script>
 <script src="libs/jquery.cookie/jquery.cookie.js"></script>
 <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
 <script src="js/common.js"></script>
 <script src="js/widgets/header.js"></script>
 <script src="js/widgets/footer.js"></script>
+<script src="js/apply-hotel.js"></script>
 </body>
 </html>
