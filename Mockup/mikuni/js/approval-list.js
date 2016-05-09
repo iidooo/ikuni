@@ -6,4 +6,6 @@ $(function () {
     $("#tbodyApprovalList tr").click(function(){
         location.href = "approval-detail.html";
     });
+
+    console.log()
 });

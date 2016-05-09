@@ -1,16 +1,25 @@
-<!--<!DOCTYPE html>-->
-<!--<html lang="en">-->
-<!--<head>-->
-    <!--<meta charset="UTF-8">-->
-    <!--<title>MIKUNI-创建预定</title>-->
-    <!--<link href="../libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
-    <!--<link href="../libs/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">-->
-<!--</head>-->
-<!--<body>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MIKUNI-创建预定</title>
+    <link href="../libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../libs/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+</head>
+<body>
 <!--&lt;!&ndash; Button trigger modal &ndash;&gt;-->
 <!--<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#dialogCreateScheduler">-->
     <!--弹出预约创建对话框-->
 <!--</button>-->
+<script>
+
+</script>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-body">
+        <img style='width: 70%; float: right;' src="../img/Mikuni_company_logo.svg.png">
+        <!-- style="width: 1000px; height: 650px;" -->
+    </div>
+</div>
 
 <!-- Modal -->
 <div class="modal fade" id="dialogCreateScheduler" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -50,7 +59,7 @@
                             <div class="col-md-4">
                                 <div class="input-group date form_time" data-date="" data-date-format="hh:ii"
                                      data-link-field="startTime" data-link-format="hh:ii">
-                                    <input id="startTime" class="form-control" type="text" value="" readonly>
+                                    <input id="startTime" class="form-control" type="text" value="09:00" readonly>
                                     <span class="input-group-addon"><span
                                             class="glyphicon glyphicon-time"></span></span>
                                 </div>
@@ -61,7 +70,7 @@
                             <div class="col-md-4">
                                 <div class="input-group date form_time" data-date="" data-date-format="hh:ii"
                                      data-link-field="endTime" data-link-format="hh:ii">
-                                    <input id="endTime" class="form-control" type="text" value="" readonly>
+                                    <input id="endTime" class="form-control" type="text" value="11:00" readonly>
                                     <span class="input-group-addon"><span
                                             class="glyphicon glyphicon-time"></span></span>
                                 </div>
@@ -318,11 +327,11 @@
     </div>
 </div>
 
-<!--<script src="../libs/jquery/js/jquery-2.1.4.min.js"></script>-->
-<!--<script src="../libs/jquery.cookie/jquery.cookie.js"></script>-->
-<!--<script src="../libs/bootstrap/js/bootstrap.min.js"></script>-->
-<!--<script src="../libs/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>-->
-<!--<script src="../js/common.js"></script>-->
-<!--<script src="../js/widgets/dialog-create-scheduler.js"></script>-->
-<!--</body>-->
-<!--</html>-->
+<script src="../libs/jquery/js/jquery-2.1.4.min.js"></script>
+<script src="../libs/jquery.cookie/jquery.cookie.js"></script>
+<script src="../libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="../libs/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/widgets/dialog-create-scheduler.js"></script>
+</body>
+</html>

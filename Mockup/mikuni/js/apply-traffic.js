@@ -13,7 +13,7 @@ $(function () {
     });
 
     $("#btnSetApprovalUser").bind("click", function(){
-        var $select = $("<select class='form-control'><option>部长</option><option>人事</option><option>财务</option></select>");
+        var $select = $("<select class='form-control'><option>审批者2:社长</option></select>");
         $("#btnSetApprovalUser").before($select);
     });
 });
