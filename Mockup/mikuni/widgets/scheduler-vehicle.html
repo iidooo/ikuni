@@ -781,9 +781,9 @@
                 <div class="container-fluid">
                     <div class="row form-horizontal">
                         <div class="form-group">
-                            <label class="control-label col-md-2">预约日期</label>
+                            <label class="control-label col-md-3">预约日期</label>
 
-                            <div class="col-md-10">
+                            <div class="col-md-9">
                                 <input type="text" class="form-control" readonly value="2016-03-30">
                             </div>
                         </div>
@@ -791,9 +791,9 @@
 
                     <div class="row form-horizontal">
                         <div class="form-group">
-                            <label class="control-label col-md-2">预约对象</label>
+                            <label class="control-label col-md-3">预约对象</label>
 
-                            <div class="col-md-10">
+                            <div class="col-md-9">
                                 <input type="text" class="form-control" readonly value="车辆一">
                             </div>
                         </div>
@@ -801,7 +801,7 @@
 
                     <div class="row form-horizontal">
                         <div class="form-group">
-                            <label for="startTime" class="control-label col-md-2">预约时间</label>
+                            <label for="startTime" class="control-label col-md-3">预约时间</label>
 
                             <div class="col-md-4">
                                 <div class="input-group date form_time" data-date="" data-date-format="hh:ii"
@@ -827,9 +827,9 @@
 
                     <div class="row form-horizontal">
                         <div class="form-group">
-                            <label class="control-label col-md-2">标题</label>
+                            <label class="control-label col-md-3">标题</label>
 
-                            <div class="col-md-10">
+                            <div class="col-md-9">
                                 <input type="text" class="form-control">
                             </div>
                         </div>
@@ -837,9 +837,9 @@
 
                     <div class="row form-horizontal">
                         <div class="form-group">
-                            <label class="control-label col-md-2">备注</label>
+                            <label class="control-label col-md-3">备注</label>
 
-                            <div class="col-md-10">
+                            <div class="col-md-9">
                                 <textarea cols="50" rows="5" class="form-control"></textarea>
                             </div>
                         </div>
@@ -847,15 +847,15 @@
 
                     <div class="row form-horizontal">
                         <div class="form-group">
-                            <label class="control-label col-md-2">乘坐人数</label>
+                            <label class="control-label col-md-3">乘坐人数</label>
 
-                            <div class="col-md-4">
+                            <div class="col-md-3">
                                 <input type="text" class="form-control">
                             </div>
 
-                            <label class="control-label col-md-2">公开性</label>
+                            <label class="control-label col-md-3">公开性</label>
 
-                            <div class="col-md-4">
+                            <div class="col-md-3">
                                 <select class="form-control">
                                     <option>公开</option>
                                     <option>私有</option>
@@ -867,9 +867,35 @@
 
                     <div class="row form-horizontal">
                         <div class="form-group">
-                            <label class="control-label col-md-2">重复设定</label>
+                            <label class="control-label col-md-3">驶出公里数</label>
 
-                            <div class="col-md-10">
+                            <div class="col-md-3">
+                                <input type="text" class="form-control">
+                            </div>
+
+                            <label class="control-label col-md-3">驶回公里数</label>
+
+                            <div class="col-md-3">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row form-horizontal">
+                        <div class="form-group">
+                            <label class="control-label col-md-3">实际使用公里数</label>
+
+                            <div class="col-md-3">
+                                <input type="text" class="form-control" readonly="readonly">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row form-horizontal">
+                        <div class="form-group">
+                            <label class="control-label col-md-3">重复设定</label>
+
+                            <div class="col-md-9">
                                 <select id="selRepeatMode" class="form-control" onchange="changeRepeatOption()">
                                     <option value="" selected="selected">不重复</option>
                                     <option value="1">每日</option>
@@ -883,7 +909,7 @@
                     <div id="repeatDailyOption" class="hidden">
                         <div class="row form-horizontal">
                             <div class="form-group">
-                                <label for="startTime" class="control-label col-md-2">重复期间</label>
+                                <label for="startTime" class="control-label col-md-3">重复期间</label>
 
                                 <div class="col-md-4">
                                     <div class="input-group date form_date" data-date="" data-date-format="yyyy-mm-dd"
@@ -911,9 +937,9 @@
                     <div id="repeatWeeklyOption" class="hidden">
                         <div class="row form-horizontal">
                             <div class="form-group">
-                                <label class="control-label col-md-2">周选择</label>
+                                <label class="control-label col-md-3">周选择</label>
 
-                                <div class="col-md-10">
+                                <div class="col-md-9">
                                     <label class="checkbox-inline">
                                         <input type="checkbox" value="option1"> 星期一
                                     </label>
@@ -944,9 +970,9 @@
                     <div id="repeatMonthlyOption" class="hidden">
                         <div class="row form-horizontal">
                             <div class="form-group">
-                                <label class="control-label col-md-2">日选择</label>
+                                <label class="control-label col-md-3">日选择</label>
 
-                                <div class="col-md-10">
+                                <div class="col-md-9">
                                     <label class="checkbox-inline">
                                         <input type="checkbox" value="option1"> 1日
                                     </label>

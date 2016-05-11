@@ -152,6 +152,137 @@
                                         </div>
                                     </td>
                                 </tr>
+
+                                <!--酒店申请内容-->
+                                <tr>
+                                    <th>酒店名称</th>
+                                    <td colspan="3">
+                                        <input type="text" class="form-control"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>酒店类型</th>
+                                    <td colspan="3">
+                                        <select class="form-control">
+                                            <option>五星级酒店</option>
+                                            <option>四星级酒店</option>
+                                            <option>三星级酒店</option>
+                                            <option>其它旅馆</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>酒店单价</th>
+                                    <td colspan="3">
+                                        <input type="text" class="form-control"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>入住人员</th>
+                                    <td colspan="3">
+                                        <input type="text" class="form-control"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>入住时间</th>
+                                    <td colspan="3">
+                                        <div class="form-group">
+                                            <div class="input-group date form_datetime"
+                                                 data-date-format="yyyy-mm-dd hh:ii:ss"
+                                                 data-link-field="checkInDateTime"
+                                                 data-link-format="yyyy-mm-dd hh:ii:ss">
+                                                <input id="checkInDateTime" class="form-control" type="text" value=""
+                                                       readonly>
+                                                <span class="input-group-addon"><span
+                                                        class="glyphicon glyphicon-remove"></span></span>
+                                                <span class="input-group-addon"><span
+                                                        class="glyphicon glyphicon-th"></span></span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>退订时间</th>
+                                    <td colspan="3">
+                                        <div class="form-group">
+                                            <div class="input-group date form_datetime"
+                                                 data-date-format="yyyy-mm-dd hh:ii:ss"
+                                                 data-link-field="checkOutDateTime"
+                                                 data-link-format="yyyy-mm-dd hh:ii:ss">
+                                                <input id="checkOutDateTime" class="form-control" type="text" value=""
+                                                       readonly>
+                                                <span class="input-group-addon"><span
+                                                        class="glyphicon glyphicon-remove"></span></span>
+                                                <span class="input-group-addon"><span
+                                                        class="glyphicon glyphicon-th"></span></span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <!--交通申请-->
+                                <tr>
+                                    <th>交通类型</th>
+                                    <td colspan="3">
+                                        <select class="form-control">
+                                            <option>飞机</option>
+                                            <option>高铁</option>
+                                            <option>小汽车</option>
+                                            <option>邮船</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>出发时间</th>
+                                    <td colspan="3">
+                                        <div class="form-group">
+                                            <div class="input-group date form_datetime"
+                                                 data-date-format="yyyy-mm-dd hh:ii:ss" data-link-field="leaveDateTime"
+                                                 data-link-format="yyyy-mm-dd hh:ii:ss">
+                                                <input id="leaveDateTime" class="form-control" type="text" value=""
+                                                       readonly>
+                                                <span class="input-group-addon"><span
+                                                        class="glyphicon glyphicon-remove"></span></span>
+                                                <span class="input-group-addon"><span
+                                                        class="glyphicon glyphicon-th"></span></span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>归来时间</th>
+                                    <td colspan="3">
+                                        <div class="form-group">
+                                            <div class="input-group date form_datetime"
+                                                 data-date-format="yyyy-mm-dd hh:ii:ss" data-link-field="arriveDateTime"
+                                                 data-link-format="yyyy-mm-dd hh:ii:ss">
+                                                <input id="arriveDateTime" class="form-control" type="text" value=""
+                                                       readonly>
+                                                <span class="input-group-addon"><span
+                                                        class="glyphicon glyphicon-remove"></span></span>
+                                                <span class="input-group-addon"><span
+                                                        class="glyphicon glyphicon-th"></span></span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>往返</th>
+                                    <td colspan="3">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> 是否需要往返申请
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>航班号／车次号</th>
+                                    <td colspan="3">
+                                        <input type="text" class="form-control"/>
+                                    </td>
+                                </tr>
+
                                 <tr>
                                     <th>备注</th>
                                     <td colspan="3">
@@ -162,19 +293,25 @@
                             </table>
                         </div>
                     </div>
+
                     <div class="panel panel-warning">
                         <div class="panel-heading">指定审批人</div>
                         <div class="panel-body">
                             <div class="form-inline">
                                 <select class="form-control">
-                                    <option>部长</option>
-                                    <option>人事</option>
-                                    <option>财务</option>
+                                    <option>开发部</option>
+                                    <option>销售部</option>
+                                    <option>研发部</option>
+                                </select>
+                                <select class="form-control">
+                                    <option>审批者1：邵猛</option>
+                                    <option>审批者2：社长</option>
                                 </select>
                                 <button id="btnSetApprovalUser" class="btn btn-default">指定下一审批人</button>
                             </div>
                         </div>
                     </div>
+
                     <div class="panel panel-default">
                         <div class="panel-heading">附件添加</div>
                         <div class="panel-body">

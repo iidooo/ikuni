@@ -6,6 +6,7 @@
     <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="libs/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
     <link href="css/widgets/header.css" rel="stylesheet">
+    <link href="css/apply-asset.css" rel="stylesheet">
 </head>
 <body>
 <div id="applyAsset">
@@ -17,49 +18,153 @@
                 <div class="panel-heading">批准申请</div>
                 <div class="panel-body">
                     <div class="panel panel-default">
-                        <div class="panel-heading">申请基本信息</div>
+                        <div class="panel-heading">批准人填写</div>
                         <div class="panel-body">
-                            <table class="table">
+                            <table class="table table-bordered">
                                 <tr>
-                                    <th>申请号</th>
-                                    <td>20160503001</td>
-                                    <th>申请日</th>
-                                    <td>2016-05-03</td>
+                                    <th rowspan="2">批准</th>
+                                    <th rowspan="2">
+                                        <label class="radio-inline">
+                                            <input type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                                   value="option1"> 批准
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                                   value="option2"> 附件批准
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                                                   value="option3"> 不批准
+                                        </label>
+                                    </th>
+                                    <th>批准日</th>
                                 </tr>
                                 <tr>
-                                    <th>申请者</th>
-                                    <td>申请者：郑丽丽</td>
-                                    <th>申请部门</th>
-                                    <td>开发部</td>
+                                    <td>2016-05-17</td>
+                                </tr>
+                            </table>
+                            <table class="table table-bordered">
+                                <tr>
+                                    <th rowspan="2">批准栏</th>
+                                    <th>批准印</th>
+                                    <th>批注</th>
                                 </tr>
                                 <tr>
-                                    <th>作成者</th>
-                                    <td>申请者：郑丽丽</td>
-                                    <th>状态</th>
-                                    <td>新申请</td>
-                                </tr>
-                                <tr>
-                                    <th>申请标题</th>
-                                    <td colspan="3">
-                                        <input type="text" class="form-control"/>
+                                    <td>
+                                        <label></label>
+                                    </td>
+                                    <td>
+                                         <textarea cols="100" rows="3"
+                                                   class="form-control"></textarea>
                                     </td>
                                 </tr>
                             </table>
                         </div>
                     </div>
+
                     <div class="panel panel-default">
-                        <div class="panel-heading">申请内容</div>
+                        <div class="panel-heading">财务部填写</div>
                         <div class="panel-body">
-                            <table class="table">
+                            <table class="table table-bordered">
+                                <tr>
+                                    <th rowspan="2">批注</th>
+                                    <td rowspan="2">
+                                     <textarea cols="100" rows="3"
+                                               class="form-control"></textarea>
+                                    </td>
+                                    <td>
+                                        财务部长印
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label></label>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">立项人填写</div>
+                        <div class="panel-body">
+                            <div class="col-md-8">
+                                <table class="table table-bordered">
+                                    <tr>
+                                        <th width="100px">批准人</th>
+                                        <th>年度</th>
+                                        <th colspan="2">批准项目分类</th>
+                                        <th>申请部门管理号</th>
+                                        <th>部门序号</th>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2"><label></label></td>
+                                        <td><input type="text" class="form-control"/></td>
+                                        <th>表号</th>
+                                        <th>分类编号</th>
+                                        <td><input type="text" class="form-control"/></td>
+                                        <td><input type="text" class="form-control"/></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" class="form-control"/></td>
+                                        <td><input type="text" class="form-control"/></td>
+                                        <td><input type="text" class="form-control"/></td>
+                                        <td><input type="text" class="form-control"/></td>
+                                        <td><input type="text" class="form-control"/></td>
+                                    </tr>
+                                    <tr>
+                                        <th>立项部门</th>
+                                        <td colspan="5"><input type="text" class="form-control"/></td>
+                                    </tr>
+                                    <tr>
+                                        <th>部门序号</th>
+                                        <td colspan="5"><input type="text" class="form-control"/></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="col-md-4">
+                                <table class="table table-bordered">
+                                    <tr>
+                                        <th colspan="2">立项负责人岗位名</th>
+                                        <th colspan="2">立项负责人印</th>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" rowspan="2">
+                                            <textarea rows="5"
+                                                      class="form-control"></textarea>
+                                        </td>
+                                        <td colspan="2" rowspan="2">
+                                            <label></label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="2">申请人</th>
+                                        <td rowspan="2"><input type="text" class="form-control"/></td>
+                                        <th rowspan="2">审核人</th>
+                                        <td rowspan="2"><input type="text" class="form-control"/></td>
+                                    </tr>
+                                    <tr>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">请决裁下记内容</div>
+                        <div class="panel-body">
+                            <table class="table table-bordered">
                                 <tr>
                                     <th width="100px">项目名</th>
-                                    <td colspan="3">
+                                    <td colspan="4">
                                         <input type="text" class="form-control"/>
                                     </td>
                                 </tr>
                                 <tr>
                                     <th>金额</th>
-                                    <td>
+                                    <td colspan="2">
                                         <input type="text" class="form-control"/>
                                     </td>
                                     <th width="100px">付款条件</th>
@@ -68,6 +173,7 @@
                                     </td>
                                 </tr>
                                 <tr>
+                                    <th rowspan="2">日程</th>
                                     <th>预购日</th>
                                     <td>
                                         <div class="form-group">
@@ -81,7 +187,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <th>预定付款日</th>
+                                    <th width="100px">预定付款日</th>
                                     <td>
                                         <div class="form-group">
                                             <div class="input-group date form_date"
@@ -123,7 +229,9 @@
                                         </div>
                                     </td>
                                 </tr>
+
                                 <tr>
+                                    <th rowspan="2">预算</th>
                                     <th>预算额</th>
                                     <td>
                                         <input type="text" class="form-control">
@@ -143,45 +251,82 @@
                                         <input type="text" class="form-control">
                                     </td>
                                 </tr>
+
+                                <tr>
+                                    <th rowspan="2">设备计划</th>
+                                    <th width="100px">检讨书</th>
+                                    <td colspan="3"><input type="file"></td>
+                                </tr>
+                                <tr>
+                                    <th>设备计划</th>
+                                    <td colspan="3"><input type="file"></td>
+                                </tr>
+
                                 <tr>
                                     <th>内容、目的、预期效果</th>
-                                    <td colspan="3">
+                                    <td colspan="4">
                                         <textarea cols="100" rows="5"
                                                   class="form-control"></textarea>
                                     </td>
                                 </tr>
+
                                 <tr>
+                                    <th rowspan="2">价格交涉的实施</th>
                                     <th>价格交涉实施</th>
-                                    <td colspan="3">
-                                        <div class="checkbox">
-                                            <label>
-                                                <input type="checkbox"> 价格交涉实施有无
-                                            </label>
-                                        </div>
+                                    <td>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="inlineRadioOptions1"
+                                                   value="option1"> 有
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="inlineRadioOptions1"
+                                                   value="option2"> 未
+                                        </label>
                                     </td>
-                                </tr>
-                                <tr>
-                                    <th>价格交涉未实施理由</th>
-                                    <td colspan="3">
+                                    <td>(未实施情况下请填写理由)</td>
+                                    <td>
                                         <textarea cols="100" rows="5"
                                                   class="form-control"></textarea>
                                     </td>
                                 </tr>
+
                                 <tr>
                                     <th>共同估价实施</th>
-                                    <td colspan="3">
-                                        <div class="checkbox">
-                                            <label>
-                                                <input type="checkbox"> 共同估价实施有无
-                                            </label>
-                                        </div>
+                                    <td>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="inlineRadioOptions2"
+                                                   value="option1"> 有
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="inlineRadioOptions2"
+                                                   value="option2"> 未
+                                        </label>
                                     </td>
-                                </tr>
-                                <tr>
-                                    <th>未实施情况下请填写理由</th>
-                                    <td colspan="3">
+                                    <td>(未实施情况下请填写理由)</td>
+                                    <td>
                                         <textarea cols="100" rows="5"
                                                   class="form-control"></textarea>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th>附件</th>
+                                    <td colspan="4">
+                                        <label class="radio-inline">
+                                            <input type="checkbox"
+                                                   value="option1"> 说明资料
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="checkbox"
+                                                   value="option2"> 报价单
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="checkbox"
+                                                   value="option2"> 其他
+                                        </label>
+                                        <div class="radio-inline">
+                                            <input type="text" class="form-control">
+                                        </div>
                                     </td>
                                 </tr>
                             </table>
@@ -192,37 +337,19 @@
                         <div class="panel-body">
                             <div class="form-inline">
                                 <select class="form-control">
-                                    <option>部长</option>
-                                    <option>人事</option>
-                                    <option>财务</option>
+                                    <option>开发部</option>
+                                    <option>销售部</option>
+                                    <option>研发部</option>
+                                </select>
+                                <select class="form-control">
+                                    <option>审批者1：邵猛</option>
+                                    <option>审批者2：社长</option>
                                 </select>
                                 <button id="btnSetApprovalUser" class="btn btn-default">指定下一审批人</button>
                             </div>
                         </div>
                     </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">附件添加</div>
-                        <div class="panel-body">
-                            <table class="table">
-                                <tr>
-                                    <th width="100px">检讨书</th>
-                                    <td><input type="file"></td>
-                                </tr>
-                                <tr>
-                                    <th>设备计划</th>
-                                    <td><input type="file"></td>
-                                </tr>
-                                <tr>
-                                    <th>说明资料</th>
-                                    <td><input type="file"></td>
-                                </tr>
-                                <tr>
-                                    <th>报价单</th>
-                                    <td><input type="file"></td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
+
                     <div class="panel panel-default">
                         <div class="panel-heading">审批履历</div>
                         <div class="panel-body">
