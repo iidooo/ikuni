@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>车辆预约报表输出</title>
+    <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="libs/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+    <link href="css/widgets/header.css" rel="stylesheet">
+</head>
+<body>
+<div id="applyReport">
+    <header></header>
+
+    <div id="main" class="container">
+        <div class="row">
+            <div class="panel panel-primary">
+                <div class="panel-heading">车辆预约报表输出</div>
+                <div class="panel-body">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">检索条件</div>
+                        <div class="panel-body">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="col-md-4 control-label">
+                                            <label>统计时间From</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="form-group">
+                                                <div class="input-group date form_date"
+                                                     data-date-format="yyyy-mm-dd" data-link-field="applyStartDate"
+                                                     data-link-format="yyyy-mm-dd">
+                                                    <input id="applyStartDate" class="form-control" type="text" value=""
+                                                           readonly>
+                                                <span class="input-group-addon"><span
+                                                        class="glyphicon glyphicon-th"></span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="col-md-4 control-label">
+                                            <label>统计时间To</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="form-group">
+                                                <div class="input-group date form_date "
+                                                     data-date-format="yyyy-mm-dd" data-link-field="applyEndDate"
+                                                     data-link-format="yyyy-mm-dd">
+                                                    <input id="applyEndDate" class="form-control" type="text" value=""
+                                                           readonly>
+                                                <span class="input-group-addon"><span
+                                                        class="glyphicon glyphicon-th"></span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-right">
+                                <div class="btn-group">
+                                    <button class="btn btn-primary" type="submit">查询</button>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn btn-danger" type="button">重置</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">检索结果一览</div>
+                        <div class="panel-body">
+                            <table class="table table-striped table-hover">
+                                <thead>
+                                <tr>
+                                    <th>车辆</th>
+                                    <th>日期</th>
+                                    <th>时间From</th>
+                                    <th>时间To</th>
+                                    <th>事由</th>
+                                    <th>驶出公里数</th>
+                                    <th>驶回公里数</th>
+                                    <th>实际使用公里数</th>
+                                    <th>乘坐人数</th>
+                                    <th>备注</th>
+                                    <th></th>
+                                </tr>
+                                </thead>
+                                <tbody id="tbodyApplyList">
+                                <tr>
+                                    <td>车辆一</td>
+                                    <td>2016-05-01</td>
+                                    <td>11:00</td>
+                                    <td>15:00</td>
+                                    <td>XXXXXXXXXXXX</td>
+                                    <td>50</td>
+                                    <td>60</td>
+                                    <td>10</td>
+                                    <td>2</td>
+                                    <td>XXXXXXXXXXXX</td>
+                                    <td>
+                                        <a class="btn btn-success" href="template/04.xlsx">印刷</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>车辆一</td>
+                                    <td>2016-05-01</td>
+                                    <td>11:00</td>
+                                    <td>15:00</td>
+                                    <td>XXXXXXXXXXXX</td>
+                                    <td>50</td>
+                                    <td>60</td>
+                                    <td>10</td>
+                                    <td>2</td>
+                                    <td>XXXXXXXXXXXX</td>
+                                    <td>
+                                        <a class="btn btn-success" href="template/04.xlsx">印刷</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>车辆一</td>
+                                    <td>2016-05-01</td>
+                                    <td>11:00</td>
+                                    <td>15:00</td>
+                                    <td>XXXXXXXXXXXX</td>
+                                    <td>50</td>
+                                    <td>60</td>
+                                    <td>10</td>
+                                    <td>2</td>
+                                    <td>XXXXXXXXXXXX</td>
+                                    <td>
+                                        <a class="btn btn-success" href="template/04.xlsx">印刷</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>车辆一</td>
+                                    <td>2016-05-01</td>
+                                    <td>11:00</td>
+                                    <td>15:00</td>
+                                    <td>XXXXXXXXXXXX</td>
+                                    <td>50</td>
+                                    <td>60</td>
+                                    <td>10</td>
+                                    <td>2</td>
+                                    <td>XXXXXXXXXXXX</td>
+                                    <td>
+                                        <a class="btn btn-success" href="template/04.xlsx">印刷</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>车辆一</td>
+                                    <td>2016-05-01</td>
+                                    <td>11:00</td>
+                                    <td>15:00</td>
+                                    <td>XXXXXXXXXXXX</td>
+                                    <td>50</td>
+                                    <td>60</td>
+                                    <td>10</td>
+                                    <td>2</td>
+                                    <td>XXXXXXXXXXXX</td>
+                                    <td>
+                                        <a class="btn btn-success" href="template/04.xlsx">印刷</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>车辆一</td>
+                                    <td>2016-05-01</td>
+                                    <td>11:00</td>
+                                    <td>15:00</td>
+                                    <td>XXXXXXXXXXXX</td>
+                                    <td>50</td>
+                                    <td>60</td>
+                                    <td>10</td>
+                                    <td>2</td>
+                                    <td>XXXXXXXXXXXX</td>
+                                    <td>
+                                        <a class="btn btn-success" href="template/04.xlsx">印刷</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>车辆一</td>
+                                    <td>2016-05-01</td>
+                                    <td>11:00</td>
+                                    <td>15:00</td>
+                                    <td>XXXXXXXXXXXX</td>
+                                    <td>50</td>
+                                    <td>60</td>
+                                    <td>10</td>
+                                    <td>2</td>
+                                    <td>XXXXXXXXXXXX</td>
+                                    <td>
+                                        <a class="btn btn-success" href="template/04.xlsx">印刷</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>车辆一</td>
+                                    <td>2016-05-01</td>
+                                    <td>11:00</td>
+                                    <td>15:00</td>
+                                    <td>XXXXXXXXXXXX</td>
+                                    <td>50</td>
+                                    <td>60</td>
+                                    <td>10</td>
+                                    <td>2</td>
+                                    <td>XXXXXXXXXXXX</td>
+                                    <td>
+                                        <a class="btn btn-success" href="template/04.xlsx">印刷</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>车辆一</td>
+                                    <td>2016-05-01</td>
+                                    <td>11:00</td>
+                                    <td>15:00</td>
+                                    <td>XXXXXXXXXXXX</td>
+                                    <td>50</td>
+                                    <td>60</td>
+                                    <td>10</td>
+                                    <td>2</td>
+                                    <td>XXXXXXXXXXXX</td>
+                                    <td>
+                                        <a class="btn btn-success" href="template/04.xlsx">印刷</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>车辆一</td>
+                                    <td>2016-05-01</td>
+                                    <td>11:00</td>
+                                    <td>15:00</td>
+                                    <td>XXXXXXXXXXXX</td>
+                                    <td>50</td>
+                                    <td>60</td>
+                                    <td>10</td>
+                                    <td>2</td>
+                                    <td>XXXXXXXXXXXX</td>
+                                    <td>
+                                        <a class="btn btn-success" href="template/04.xlsx">印刷</a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <nav class="text-center">
+                                <ul class="pagination">
+                                    <li class="disabled"><a href="#" aria-label="Previous"><span
+                                            aria-hidden="true">«</span></a></li>
+                                    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer></footer>
+</div>
+<script src="libs/jquery/js/jquery-2.1.4.min.js"></script>
+<script src="libs/jquery.cookie/jquery.cookie.js"></script>
+<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/widgets/header.js"></script>
+<script src="js/widgets/footer.js"></script>
+<script src="js/apply-list.js"></script>
+</body>
+</html>

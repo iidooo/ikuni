@@ -119,7 +119,7 @@ function doSetting() {
             $('#' + selectecdlog[m]).css('width', resultLen * 17 + "px");
             $('#' + selectecdlog[m]).css('white-space', "nowrap");
             //$('#'+selectecdlog[m]).css('background-color', 'bule');
-            $('#' + selectecdlog[m]).html("预约者：郑丽丽");//= '已选择';
+            $('#' + selectecdlog[m]).html("Test User 1");//= '已选择';
 
         }
         else {

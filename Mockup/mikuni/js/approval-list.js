@@ -3,8 +3,12 @@
  */
 $(function () {
 
-    $("#tbodyApprovalList tr").click(function(){
-        location.href = "approval-detail.html";
+    $("#tbodyApprovalList tr:even").click(function(){
+        location.href = "approval-detail-0.html";
+    });
+
+    $("#tbodyApprovalList tr:odd").click(function(){
+        location.href = "approval-detail-1.html";
     });
 
     console.log()
