@@ -56,7 +56,7 @@ var Top = React.createClass({
 
                 <div className="main">
                     <div className="col-sm-2 company-side-bar">
-                        <CompanyList/>
+                        <CompanyList render="group"/>
                     </div>
                     <div className="col-sm-10">
                         <MenuGroupList/>
@@ -72,7 +72,7 @@ var MenuGroupList = React.createClass({
     render: function () {
         return (
             <div>
-                <div className="margin-top-30 padding-left-15"><h3><a href="../pages/main.html">进入主界面</a></h3></div>
+                <div className="margin-top-30 padding-left-15"><h3><a className="text-decoration-underline" href="../pages/main.html">进入主界面</a></h3></div>
                 <div id="menuGroupList" className="margin-top-30">
                     <div className="col-md-4">
                         <div className="list-group">

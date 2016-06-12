@@ -56,7 +56,7 @@ var Top = React.createClass({displayName: "Top",
 
                 React.createElement("div", {className: "main"}, 
                     React.createElement("div", {className: "col-sm-2 company-side-bar"}, 
-                        React.createElement(CompanyList, null)
+                        React.createElement(CompanyList, {render: "group"})
                     ), 
                     React.createElement("div", {className: "col-sm-10"}, 
                         React.createElement(MenuGroupList, null)
@@ -72,7 +72,7 @@ var MenuGroupList = React.createClass({displayName: "MenuGroupList",
     render: function () {
         return (
             React.createElement("div", null, 
-                React.createElement("div", {className: "margin-top-30 padding-left-15"}, React.createElement("h3", null, React.createElement("a", {href: "../pages/main.html"}, "进入主界面"))), 
+                React.createElement("div", {className: "margin-top-30 padding-left-15"}, React.createElement("h3", null, React.createElement("a", {className: "text-decoration-underline", href: "../pages/main.html"}, "进入主界面"))), 
                 React.createElement("div", {id: "menuGroupList", className: "margin-top-30"}, 
                     React.createElement("div", {className: "col-md-4"}, 
                         React.createElement("div", {className: "list-group"}, 

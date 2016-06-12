@@ -2,6 +2,10 @@ html, body, #page, #top, .main, .company-side-bar, #companyListWrap{
     height: 100%;
 }
 
+.navbar{
+    margin-bottom: 0px;
+}
+
 .company-side-bar{
     padding-left: 0;
 }

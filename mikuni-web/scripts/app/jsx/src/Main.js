@@ -126,14 +126,15 @@ var Main = React.createClass({
             <div id="top">
                 <Header/>
 
-                <div className="main">
-                    <div className="col-sm-2 company-side-bar">
-                        <CompanyList/>
-                    </div>
-                    <div className="col-sm-3 tree-side-bar">
-                        <TreeMenu/>
-                    </div>
-                    <div className="col-sm-6">
+                <div className="container-fluid">
+                    <div className="row">
+                        <div className="col-sm-3">
+                            <CompanyList/>
+                            <TreeMenu/>
+                        </div>
+                        <div className="col-sm-9">
+                            <div className="padding-left-15"><h3><a className="text-decoration-underline" href="../pages/top.html">返回到首页</a></h3></div>
+                        </div>
                     </div>
                 </div>
 

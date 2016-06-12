@@ -68,6 +68,10 @@
     padding: 0;
 }
 
+.bg-ccc{
+    background-color: #cccccc;
+}
+
 .text-white{
     color: #ffffff;
 }
@@ -86,4 +90,12 @@
 
 .padding-left-15{
     padding-left: 15px;
+}
+
+.text-decoration-underline{
+    text-decoration: underline;
+}
+
+.form-control{
+    border-radius: 0px;
 }

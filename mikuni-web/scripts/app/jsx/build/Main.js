@@ -126,14 +126,15 @@ var Main = React.createClass({displayName: "Main",
             React.createElement("div", {id: "top"}, 
                 React.createElement(Header, null), 
 
-                React.createElement("div", {className: "main"}, 
-                    React.createElement("div", {className: "col-sm-2 company-side-bar"}, 
-                        React.createElement(CompanyList, null)
-                    ), 
-                    React.createElement("div", {className: "col-sm-3 tree-side-bar"}, 
-                        React.createElement(TreeMenu, null)
-                    ), 
-                    React.createElement("div", {className: "col-sm-6"}
+                React.createElement("div", {className: "container-fluid"}, 
+                    React.createElement("div", {className: "row"}, 
+                        React.createElement("div", {className: "col-sm-3"}, 
+                            React.createElement(CompanyList, null), 
+                            React.createElement(TreeMenu, null)
+                        ), 
+                        React.createElement("div", {className: "col-sm-9"}, 
+                            React.createElement("div", {className: "padding-left-15"}, React.createElement("h3", null, React.createElement("a", {className: "text-decoration-underline", href: "../pages/top.html"}, "返回到首页")))
+                        )
                     )
                 ), 
 
