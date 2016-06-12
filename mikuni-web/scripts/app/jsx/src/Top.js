@@ -76,14 +76,14 @@ var MenuGroupList = React.createClass({
                 <div id="menuGroupList" className="margin-top-30">
                     <div className="col-md-4">
                         <div className="list-group">
-                            <a href="#" className="list-group-item active">预约功能</a>
+                            <a href="#" className="list-group-item active title">预约功能</a>
                             <a href="order-meeting.html" className="list-group-item">会议室预约</a>
                             <a href="order-vehicle.html" className="list-group-item">车辆预约</a>
                         </div>
                     </div>
                     <div className="col-md-4">
                         <div className="list-group">
-                            <a href="#" className="list-group-item active">申请&amp;审批</a>
+                            <a href="#" className="list-group-item active title">申请&amp;审批</a>
                             <a href="apply-list.html" className="list-group-item">我的申请一览</a>
                             <a href="approval-list.html" className="list-group-item">我的审批一览&nbsp;<span
                                 className="badge">4</span></a>
@@ -94,7 +94,7 @@ var MenuGroupList = React.createClass({
                     </div>
                     <div className="col-md-4">
                         <div className="list-group">
-                            <a href="#" className="list-group-item active">报表输出</a>
+                            <a href="#" className="list-group-item active title">报表输出</a>
                             <a href="order-report-vehicle.html" className="list-group-item">车辆预约</a>
                             <a href="apply-report-trip.html" className="list-group-item">出差申请</a>
                             <a href="apply-report-trip.html" className="list-group-item">批准申请</a>

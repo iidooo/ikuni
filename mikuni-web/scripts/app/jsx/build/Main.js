@@ -128,12 +128,17 @@ var Main = React.createClass({displayName: "Main",
 
                 React.createElement("div", {className: "container-fluid"}, 
                     React.createElement("div", {className: "row"}, 
-                        React.createElement("div", {className: "col-sm-3"}, 
+                        React.createElement("div", {className: "col-sm-2"}, 
+                            React.createElement("div", null, 
+                            React.createElement("label", {className: "control-label"}, React.createElement("a", {className: "text-decoration-underline", href: "../pages/top.html"}, "返回首页"))
+                            ), 
                             React.createElement(CompanyList, null), 
-                            React.createElement(TreeMenu, null)
+                            React.createElement("div", null, 
+                                React.createElement(TreeMenu, null)
+                            )
                         ), 
-                        React.createElement("div", {className: "col-sm-9"}, 
-                            React.createElement("div", {className: "padding-left-15"}, React.createElement("h3", null, React.createElement("a", {className: "text-decoration-underline", href: "../pages/top.html"}, "返回到首页")))
+                        React.createElement("div", {className: "col-sm-9"}
+
                         )
                     )
                 ), 

@@ -26,7 +26,8 @@ var TreeData = [
     {
         text: '预约',
         href: '#',
-        backColor: '#f5f5f5',
+        backColor: '#337ab7',
+        color: '#ffffff',
         nodes: [
             {
                 text: '会议室预约',
@@ -41,7 +42,8 @@ var TreeData = [
     {
         text: '申请',
         href: '#',
-        backColor: '#f5f5f5',
+        backColor: '#337ab7',
+        color: '#ffffff',
         nodes: [
             {
                 text: '出差申请',
@@ -69,7 +71,8 @@ var TreeData = [
     {
         text: '报表输出',
         href: '#',
-        backColor: '#f5f5f5',
+        backColor: '#337ab7',
+        color: '#ffffff',
         nodes: [
             {
                 text: '车辆预约',

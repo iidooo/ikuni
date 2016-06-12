@@ -128,12 +128,17 @@ var Main = React.createClass({
 
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="col-sm-3">
+                        <div className="col-sm-2">
+                            <div>
+                            <label className="control-label"><a className="text-decoration-underline" href="../pages/top.html">返回首页</a></label>
+                            </div>
                             <CompanyList/>
-                            <TreeMenu/>
+                            <div>
+                                <TreeMenu/>
+                            </div>
                         </div>
                         <div className="col-sm-9">
-                            <div className="padding-left-15"><h3><a className="text-decoration-underline" href="../pages/top.html">返回到首页</a></h3></div>
+
                         </div>
                     </div>
                 </div>

@@ -1,3 +1,7 @@
+body{
+    font-family: "ＭＳ Ｐゴシック","Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+
 .list-group-item:first-child{
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;

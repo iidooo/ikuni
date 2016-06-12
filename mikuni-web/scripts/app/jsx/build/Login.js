@@ -25,36 +25,36 @@ var Login = React.createClass({displayName: "Login",
                     React.createElement("img", {src: "../img/login/logo.png"})
                 ), 
                 React.createElement("div", {className: "form-group"}, 
-                    React.createElement("label", {className: "col-sm-3 control-label"}, "ユーザー"), 
+                    React.createElement("label", {className: "col-sm-4 control-label"}, "用户名"), 
 
-                    React.createElement("div", {className: "col-sm-9"}, 
-                        React.createElement("input", {type: "text", className: "form-control", placeholder: "ユーザー"})
+                    React.createElement("div", {className: "col-sm-8"}, 
+                        React.createElement("input", {type: "text", className: "form-control", placeholder: "请输入用户名"})
                     )
                 ), 
                 React.createElement("div", {className: "form-group"}, 
-                    React.createElement("label", {htmlFor: "inputPassword", className: "col-sm-3 control-label"}, "パスワード"), 
+                    React.createElement("label", {htmlFor: "inputPassword", className: "col-sm-4 control-label"}, "密 码"), 
 
-                    React.createElement("div", {className: "col-sm-9"}, 
-                        React.createElement("input", {type: "password", className: "form-control", id: "inputPassword", placeholder: "パスワード", 
+                    React.createElement("div", {className: "col-sm-8"}, 
+                        React.createElement("input", {type: "password", className: "form-control", id: "inputPassword", placeholder: "请输入密码", 
                                value: ""})
                     )
                 ), 
 
                 React.createElement("div", {className: "form-group"}, 
-                    React.createElement("label", {htmlFor: "selectLanguage", className: "col-sm-3 control-label"}, "言語"), 
+                    React.createElement("label", {htmlFor: "selectLanguage", className: "col-sm-4 control-label"}, "语 言"), 
 
-                    React.createElement("div", {className: "col-sm-9"}, 
-                        React.createElement("select", {id: "selectLanguage", className: "form-control", defaultValue: "ja-jp"}, 
+                    React.createElement("div", {className: "col-sm-8"}, 
+                        React.createElement("select", {id: "selectLanguage", className: "form-control", defaultValue: "zh-cn"}, 
                             React.createElement("option", {value: "ja-jp"}, "日本語"), 
-                            React.createElement("option", {value: "zh-cn"}, "中国語")
+                            React.createElement("option", {value: "zh-cn"}, "中文")
                         )
                     )
                 ), 
 
                 React.createElement("div", {className: "form-group"}, 
-                    React.createElement("div", {className: "col-sm-offset-3 col-sm-9"}, 
+                    React.createElement("div", {className: "col-sm-offset-4 col-sm-8"}, 
                         React.createElement("a", {id: "btnLogin", href: "index.html", className: "btn btn-primary btn-block", 
-                           onClick: this.handleLogin}, "登録")
+                           onClick: this.handleLogin}, "登录")
                     )
                 )
             )

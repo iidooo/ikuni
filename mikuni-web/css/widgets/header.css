@@ -9,6 +9,10 @@ header .logo{
     color: #ffffff;
 }
 
+.navbar{
+    margin-bottom: 10px;
+}
+
 .navbar-inverse .navbar-inner {
     background: #0C7854;
 }
