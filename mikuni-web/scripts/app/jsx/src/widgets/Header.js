@@ -20,7 +20,7 @@ var Header = React.createClass({
     render: function () {
         return (
             <header className="header">
-                <nav className="navbar navbar-inverse">
+                <nav className="navbar">
                     <div className="container-fluid">
                         <div className="navbar-header">
                             <LOGO/>
@@ -49,7 +49,7 @@ var LOGO = React.createClass({
 var MainMenu = React.createClass({
     render: function () {
         return (
-                <h1 className="nav navbar-nav text-white line-height-50">三国精密机械办公自动化管理系统</h1>
+                <h1 className="nav navbar-nav line-height-50">三国办公自动化管理系统</h1>
         );
     }
 });
@@ -63,7 +63,7 @@ var LoginInfo = React.createClass({
         return (
             <ul className="nav navbar-nav navbar-right">
                 <li><a href="#">您好，{this.props.roleName} {this.props.userName}</a></li>
-                <li><a href="#" onClick={this.handleClick}>注销</a></li>
+                <li><button className="margin-top-10" type="button" onClick={this.handleClick}>注销</button></li>
             </ul>
         );
     }

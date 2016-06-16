@@ -1,12 +1,7 @@
-header{
-    background-color: #000000;
-}
-
 header .logo{
     height: 50px;
     line-height: 50px;
     font-size: 24px;
-    color: #ffffff;
 }
 
 .navbar{
@@ -17,16 +12,22 @@ header .logo{
     background: #0C7854;
 }
 .navbar .nav > li > a {
-    color: #ffffff;
+    color: #000000;
 }
 .navbar .nav .active > a, .navbar .nav .active > a:hover {
-    color: paleturquoise;
+    color: #000000;
+    background-color: white;
 }
 
 .navbar .nav > li > a:hover {
-    color: paleturquoise;
+    color: #000000;
+    background-color: white;
 }
 
 .navbar-inner .brand{
     color: #ffffff;
+}
+
+#btnLogout{
+    line-height: 40px;
 }

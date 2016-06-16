@@ -1,5 +1,10 @@
 body{
     font-family: "ＭＳ Ｐゴシック","Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+    color: black;
+}
+
+a{
+    color: blue;
 }
 
 .list-group-item:first-child{
@@ -40,12 +45,20 @@ body{
     height: 100px;
 }
 
+.height-30{
+    height: 30px;
+}
+
 .width-200{
     width: 200px;
 }
 
 .margin-right-10{
     margin-right: 10px;
+}
+
+.margin-top-10{
+    margin-top: 10px;
 }
 
 .float-left{

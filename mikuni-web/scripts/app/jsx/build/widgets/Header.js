@@ -20,7 +20,7 @@ var Header = React.createClass({displayName: "Header",
     render: function () {
         return (
             React.createElement("header", {className: "header"}, 
-                React.createElement("nav", {className: "navbar navbar-inverse"}, 
+                React.createElement("nav", {className: "navbar"}, 
                     React.createElement("div", {className: "container-fluid"}, 
                         React.createElement("div", {className: "navbar-header"}, 
                             React.createElement(LOGO, null)
@@ -49,7 +49,7 @@ var LOGO = React.createClass({displayName: "LOGO",
 var MainMenu = React.createClass({displayName: "MainMenu",
     render: function () {
         return (
-                React.createElement("h1", {className: "nav navbar-nav text-white line-height-50"}, "三国精密机械办公自动化管理系统")
+                React.createElement("h1", {className: "nav navbar-nav line-height-50"}, "三国办公自动化管理系统")
         );
     }
 });
@@ -63,7 +63,7 @@ var LoginInfo = React.createClass({displayName: "LoginInfo",
         return (
             React.createElement("ul", {className: "nav navbar-nav navbar-right"}, 
                 React.createElement("li", null, React.createElement("a", {href: "#"}, "您好，", this.props.roleName, " ", this.props.userName)), 
-                React.createElement("li", null, React.createElement("a", {href: "#", onClick: this.handleClick}, "注销"))
+                React.createElement("li", null, React.createElement("button", {className: "margin-top-10", type: "button", onClick: this.handleClick}, "注销"))
             )
         );
     }

@@ -53,7 +53,7 @@ var Login = React.createClass({displayName: "Login",
 
                 React.createElement("div", {className: "form-group"}, 
                     React.createElement("div", {className: "col-sm-offset-4 col-sm-8"}, 
-                        React.createElement("a", {id: "btnLogin", href: "index.html", className: "btn btn-primary btn-block", 
+                        React.createElement("a", {id: "btnLogin", href: "index.html", className: "btn btn-default btn-block active", 
                            onClick: this.handleLogin}, "登录")
                     )
                 )
