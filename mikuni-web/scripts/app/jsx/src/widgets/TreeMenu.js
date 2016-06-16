@@ -31,11 +31,15 @@ var TreeData = [
         nodes: [
             {
                 text: '会议室预约',
-                href: '#'
+                href: '#',
+                backColor: '#f5f5f5',
+                color: '#0000ff',
             },
             {
                 text: '车辆预约',
-                href: '#'
+                href: '#',
+                backColor: '#f5f5f5',
+                color: '#0000ff',
             }
         ]
     },
@@ -47,24 +51,34 @@ var TreeData = [
         nodes: [
             {
                 text: '出差申请',
-                href: '#'
+                href: '#',
+                backColor: '#f5f5f5',
+                color: '#0000ff',
             },
             {
                 text: '批准申请',
-                href: '#'
+                href: '#',
+                backColor: '#f5f5f5',
+                color: '#0000ff',
             },
             {
                 text: '物品采购申请',
-                href: '#'
+                href: '#',
+                backColor: '#f5f5f5',
+                color: '#0000ff',
             },
             {
                 text: '我的申请',
-                href: '#'
+                href: '#',
+                backColor: '#f5f5f5',
+                color: '#0000ff',
             },
             {
                 text: '我的审批',
                 href: '#',
-                tags: ['4']
+                tags: ['4'],
+                backColor: '#f5f5f5',
+                color: '#0000ff',
             }
         ]
     },
@@ -76,19 +90,27 @@ var TreeData = [
         nodes: [
             {
                 text: '车辆预约',
-                href: '#'
+                href: '#',
+                backColor: '#f5f5f5',
+                color: '#0000ff',
             },
             {
                 text: '出差申请',
-                href: '#'
+                href: '#',
+                backColor: '#f5f5f5',
+                color: '#0000ff',
             },
             {
                 text: '批准申请',
-                href: '#'
+                href: '#',
+                backColor: '#f5f5f5',
+                color: '#0000ff',
             },
             {
                 text: '物品采购申请',
-                href: '#'
+                href: '#',
+                backColor: '#f5f5f5',
+                color: '#0000ff',
             }
         ]
     }

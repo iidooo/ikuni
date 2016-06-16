@@ -1,3 +1,11 @@
-.title{
+.title {
     font-size: 16px;
+    color: #fff;
+    background-color: blue;
+    border-color: blue;
+}
+
+.list-group-item.active {
+    background-color: blue;
+    border-color: blue;
 }

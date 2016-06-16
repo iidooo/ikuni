@@ -53,8 +53,8 @@ var Login = React.createClass({
 
                 <div className="form-group">
                     <div className="col-sm-offset-4 col-sm-8">
-                        <a id="btnLogin" href="index.html" className="btn btn-default btn-block active"
-                           onClick={this.handleLogin}>登录</a>
+                        <button id="btnLogin" href="index.html" className="btn btn-default btn-block active"
+                           onClick={this.handleLogin}>登录</button>
                     </div>
                 </div>
             </div>

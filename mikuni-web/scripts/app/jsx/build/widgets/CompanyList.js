@@ -20,11 +20,11 @@ var CompanyListGroup = React.createClass({displayName: "CompanyListGroup",
     render: function () {
         return (
             React.createElement("div", {id: "companyList", className: "list-group"}, 
-                React.createElement("a", {href: "#", className: "list-group-item"}, "上海分公司"), 
-                React.createElement("a", {href: "#", className: "list-group-item"}, "成都分公司"), 
-                React.createElement("a", {href: "#", className: "list-group-item"}, "天津分公司"), 
-                React.createElement("a", {href: "#", className: "list-group-item"}, "武汉分公司"), 
-                React.createElement("a", {href: "#", className: "list-group-item"}, "湖北分公司")
+                React.createElement("a", {href: "#", className: "list-group-item active"}, "三国上海"), 
+                React.createElement("a", {href: "#", className: "list-group-item"}, "上海三国"), 
+                React.createElement("a", {href: "#", className: "list-group-item"}, "成都三国"), 
+                React.createElement("a", {href: "#", className: "list-group-item"}, "天津三国"), 
+                React.createElement("a", {href: "#", className: "list-group-item"}, "浙江三国")
             )
         );
     }
@@ -35,11 +35,11 @@ var CompanyListSelect = React.createClass({displayName: "CompanyListSelect",
         return (
             React.createElement("div", {id: "companyList"}, 
                 React.createElement("select", {className: "form-control"}, 
-                    React.createElement("option", null, "上海分公司"), 
-                    React.createElement("option", null, "成都分公司"), 
-                    React.createElement("option", null, "天津分公司"), 
-                    React.createElement("option", null, "武汉分公司"), 
-                    React.createElement("option", null, "湖北分公司")
+                    React.createElement("option", null, "三国上海"), 
+                    React.createElement("option", null, "上海三国"), 
+                    React.createElement("option", null, "成都三国"), 
+                    React.createElement("option", null, "天津三国"), 
+                    React.createElement("option", null, "浙江三国")
                 )
             )
         );
